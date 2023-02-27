@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android View W1D5</string>
+    <string name="okey">OKEY</string>
+    <string name="description">Within Google Scholar you may conduct searches by keyword, author and article title. There is also an advanced search with more options. In the result list, when you see ViewIt@CatholicU, that means we have access to the electronic copy for the article. Click on ViewIt@CatholicU, the next page will show that item in our SearchBox with a link to the full text.
+Google Scholar is good for conducting simple searches across a broad number of databases. For complex or in depth searching we recommend that you search individual subject databases.</string>
+    <string name="generic_button_name">OK</string>
+</resources>
