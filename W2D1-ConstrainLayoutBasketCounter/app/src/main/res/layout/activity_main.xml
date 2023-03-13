@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/team_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:letterSpacing="0.01"
+        android:text="Team A"
+        app:layout_constraintEnd_toStartOf="@id/vertical_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/team_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_line"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="9"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/vertical_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/team_one" />
+
+    <TextView
+        android:id="@+id/score_tow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_line"
+        app:layout_constraintTop_toBottomOf="@id/team_one" />
+
+    <Button
+        android:id="@+id/left_three_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="+3 points"
+        app:layout_constraintEnd_toStartOf="@+id/vertical_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score_one" />
+
+    <Button
+        android:id="@+id/left_two_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="+2 points"
+        app:layout_constraintEnd_toStartOf="@id/vertical_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/left_three_points" />
+
+    <Button
+        android:id="@+id/left_free_throw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Free throw"
+        app:layout_constraintEnd_toStartOf="@id/vertical_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/left_two_points" />
+
+    <Button
+        android:id="@+id/right_three_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_line"
+        app:layout_constraintTop_toBottomOf="@id/score_tow" />
+
+    <Button
+        android:id="@+id/right_two_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 points"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_line"
+        app:layout_constraintTop_toBottomOf="@id/right_three_points" />
+
+    <Button
+        android:id="@+id/right_free_throw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free throw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vertical_line"
+        app:layout_constraintTop_toBottomOf="@id/right_two_points" />
+
+    <Button
+        android:backgroundTint="@color/black"
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        app:layout_constraintHeight_percent="0.4"
+        android:id="@+id/vertical_line"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

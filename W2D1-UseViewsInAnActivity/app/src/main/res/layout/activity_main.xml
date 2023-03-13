@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- layout attribute -->
+
+    <EditText
+        android:id="@+id/my_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/my_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/my_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/my_input" />
+
+    <!-- RelativeLayout is deprecated -->
+    <!-- Start : Left Sol,  End : Right Sag -->
+
+
+    <!-- layout_constraint  Start_toStartOf -->
+    <!-- layout_constraint  Start_toEndOf -->
+    <!-- layout_constraint  End_toStartOf -->
+    <!-- layout_constraint  End_toEndOf -->
+    <!-- parent, veya başka view idsi -->
+
+    <!-- dp sp -->
+    <!-- density independent -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
