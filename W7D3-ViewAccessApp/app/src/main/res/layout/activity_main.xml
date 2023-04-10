@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="userXml"
+            type="com.example.viewaccessapp.User" />
+
+        <variable
+            name="studentXml"
+            type="com.example.viewaccessapp.Student" />
+
+        <variable
+            name="buttonTitle"
+            type="String" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{userXml.name}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{Integer.toString(userXml.age)}"
+            />
+
+        <TextView
+            android:id="@+id/textViewStudentNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{studentXml.studentNumber}"
+            />
+
+
+        <TextView
+            android:id="@+id/textViewStudentGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{studentXml.studentGender ? `Kadın` : `Erkek`}" />
+            />
+
+        <Button
+            android:id="@+id/buttonTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{buttonTitle}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAge" />
+
+    </LinearLayout>
+
+</layout>
