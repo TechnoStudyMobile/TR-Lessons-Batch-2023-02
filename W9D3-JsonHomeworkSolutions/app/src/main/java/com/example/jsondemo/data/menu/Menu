@@ -1,0 +1,27 @@
+// Object - MenuResponse
+{
+  // Object - Menu
+  "menu": {
+    "id": "file",
+    "value": "File",
+    // Object - Popup
+    "popup": {
+      // Array - List
+      "menuitem": [
+        // Object - Menuitem
+        {
+          "value": "New",
+          "onclick": "CreateNewDoc()"
+        },
+        {
+          "value": "Open",
+          "onclick": "OpenDoc()"
+        },
+        {
+          "value": "Close",
+          "onclick": "CloseDoc()"
+        }
+      ]
+    }
+  }
+}
